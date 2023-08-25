@@ -16,6 +16,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install axios
+        run: npm install axios
+
       - name: Build the app
         run: npm run build
 
