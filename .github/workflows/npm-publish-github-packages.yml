@@ -16,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Build the app
-        run: npm run build
+        run: yarn build
 
   deploy:
     needs: build
