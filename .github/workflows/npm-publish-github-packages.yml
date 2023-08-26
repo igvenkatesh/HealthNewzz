@@ -15,16 +15,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build the app
-        run: yarn build
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          branch: gh-pages
-          folder: build
+      - name: deploy the app
+        run: npm run deploy
